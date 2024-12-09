@@ -9,7 +9,7 @@ interface EmptyStateProps {
   subtitle: string;
 }
 
-const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle }) => {
+const EmptyState: React.FC<Any> = ({ title, subtitle }) => {
   return (
     <View className="justify-center items-center px-4">
       <Image
