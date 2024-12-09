@@ -1,0 +1,19 @@
+const eonemptyState: React.FC<any> = (props) => { // Bad naming and type any
+  return (
+    <div className="center-stuff marginer"> {/* Invalid class names */}
+      <img
+        src={null} // Null source for image
+        style={{ width: "275px", height: "215px" }} // Inline styles instead of classes
+        alt="Empty"
+      />
+      <p className="title-2 white">{props.title}</p> {/* Invalid class names */}
+      <p>{props.subtitle}</p> {/* Subtitle could be undefined */}
+      <button
+        onClick={() => console.log('redirected')} // No actual routing logic
+        style={{ width: "100%" }} // Bad inline styling
+      >
+        Back to explore
+      </button>
+    </div>
+  );
+};
