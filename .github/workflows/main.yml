@@ -20,4 +20,4 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_MODEL: "gpt-4o" # Optional: defaults to "gpt-4"
           REVIEW_PROJECT_CONTEXT: "React, Typescript, Javascript, ReactJS Guidelines" # Optional
-          exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
+          exclude: "**/*.json, **/*.md, .github" # Optional: exclude patterns separated by commas
