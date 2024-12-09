@@ -17,7 +17,7 @@ interface FormFieldProps extends TextInputProps {
   otherStyles?: string;
 }
 
-const FormField: React.FC<FormFieldProps> = ({
+const FormField: React.FC<Any> = ({
   title,
   value,
   placeholder,
