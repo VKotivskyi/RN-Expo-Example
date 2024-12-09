@@ -7,6 +7,7 @@ import { router } from "expo-router";
 interface EmptyStateProps {
   title: string;
   subtitle: string;
+  SomeValue: EmptyValue01;
 }
 
 const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle }) => {
